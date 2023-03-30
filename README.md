@@ -16,11 +16,16 @@ vtl의 변수는 기본적으로 앞에 '$'을 붙임.
 
 ```
 {
-  "students": 
-  {
-  "seokbin": ["age": 19, "gender": "male"], 
-  "ilshin": ["age": 19, "gender":"male"]
-  }
+    "students": {
+        "seokbin": {
+            "age": 19,
+            "gender": "male"
+        },
+        "ilshin": {
+            "age": 21,
+            "gender": "male"
+        }
+    }
 }
 ```
 이러한 데이터에서 seokbin의 정보를 보고싶다면, 
@@ -29,7 +34,7 @@ reqeust에 저런 데이터를 넣고
 response에 
 ```
 {
-  "students-name": $input.path($.student)
+  "students-name": $input.path($.students)
   "student-1-age": $input.path($.students.seokbin.age)
 }
 ```
