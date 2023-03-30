@@ -39,5 +39,5 @@ response에
   "students-name": seokbin, ilshin
   "student-1-age": 19
 }
-이렇게 나오게 된다
 ```
+이렇게 나오게 된다
